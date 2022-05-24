@@ -1,0 +1,1313 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  width: 100vw;
+  margin: 0;
+  background-color: #FDFAF2!important;
+}
+
+/* .bodyOffset{
+  transform: translateX(-300px);
+} */
+
+p {
+  line-height: 1.8;
+}
+
+.hidden{
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+*{
+  scroll-behavior:smooth;
+}
+
+ul,ol,li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .index {
+    display: none;
+  }
+  .indexPhone{
+  display: flex;
+  }
+  .bannerPhone {
+    display: flex;
+  }
+  .banner{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 451px) and (max-width: 1050px) {
+  .all {
+      display: none;
+  }
+  .nav{
+    height: 80px;
+  }
+  .bannerSmall {
+      display: flex;
+  }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1400px) {
+  .all {
+      display: flex;
+  }
+  .nav .deskTopMenu ul>li{
+    font-size: 1.2vw;
+  }
+} 
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+  .all {
+      display: none;
+  }
+  .bannerMed {
+      display: flex;
+  }
+  .nav .deskTopMenu ul>li{
+    font-size: 19px;
+  }
+  #engTitle, #megaText, #subtitle{
+    font-size: 25px!important;
+  }
+  #paragraph{
+    font-size: 22px!important;
+  }
+  .bookPic img{
+    width: 250px!important;
+  }
+  .aboutUsBig .ourTeam h3{
+    font-size: 25px!important;
+  }
+  .lastQuote h3{
+    font-size: 25px!important;
+  }
+  .footer h2{
+    font-size: 40px!important;
+  }
+  .footer .contacts img{
+    width: 37px;
+    margin: 0 20px 0 20px;
+  }
+  .footer .logo img{
+    padding-top: 0.3vw;
+    width: 60px!important;
+  }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 2000px) {
+  .all {
+      display: none;
+  }
+  .bannerLarge {
+      display: flex;
+  }
+  .nav{
+    height: 100px!important;
+  }
+  .nav .logo img{
+    width: 90px!important;
+    height: 90px!important;
+  }
+  .nav .deskTopMenu ul>li{
+    font-size: 2.5vh;
+  }
+
+   #engTitle, #megaText, #subtitle{
+     font-size: 30px!important;
+   }
+   #paragraph{
+     font-size: 24px!important;
+   }
+   .bookPic img{
+     width: 300px!important;
+   }
+   .aboutUsBig .ourTeam h3{
+     font-size: 30px!important;
+   }
+   .lastQuote h3{
+     font-size: 30px!important;
+   }
+   .footer{
+     height: 45vh!important;
+   }
+   .footer h2{
+     font-size: 40px!important;
+   }
+   .footer .contacts img{
+     width: 40px;
+     margin: 0 20px 0 20px;
+   }
+   .footer .logo img{
+     padding-top: 0.3vw;
+     width: 60px!important;
+   }
+}
+
+@media screen and (min-width: 2001px){
+  .all {
+      display: none;
+  }
+  .bannerMega {
+      display: flex;
+  }
+  .nav{
+    height: 140px!important;
+  }
+  .nav .logo img{
+    width: 115px!important;
+    height: 115px!important;
+  }
+  .nav .deskTopMenu ul>li{
+    font-size: 1.2vw;
+  }
+  .index, .aboutUs p{
+   font-size: 35px;
+  }
+  #engTitle, #megaText, #subtitle{
+    font-size: 41px!important;
+  }
+  #paragraph{
+    font-size: 35px!important;
+  }
+  .bookPic img{
+    width: 370px!important;
+  }
+  .aboutUsBig .ourTeam h3{
+    font-size: 35px!important;
+  }
+  .lastQuote h3{
+    font-size: 36px!important;
+  }
+  .footer{
+    height: 40vh!important;
+  }
+  .footer h2{
+    font-size: 48px!important;
+  }
+  .footer .contacts img{
+    width: 60px;
+    margin: 0 40px 0 40px;
+  }
+  .footer .logo img{
+    padding-top: 3vh;
+    width: 90px!important;
+  }
+}
+
+.nav {
+  position: fixed;
+  background-color:#FDFAF2;
+  width: 100vw;
+  height: 90px;
+  top: 0;
+  z-index: 100;
+  padding-left: 20px;
+  padding-right: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .deskTopMenu{
+  position: sticky;
+  left: 65%;
+}
+.nav .deskTopMenu ul{
+  list-style-type: none;
+  position: relative;
+}
+
+.nav .deskTopMenu ul>li{
+  float: left;
+  padding-left: 40px;
+  color: rgb(37, 37, 37);
+  font-family: "CircularStd",sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+}
+
+.nav a{
+  color:rgb(37, 37, 37);
+  text-decoration: none;
+}
+
+
+.nav a:hover{
+  color: rgb(141, 53, 53);
+  transition: 200ms ease-in-out;
+  /* easein- go into it slower/fast, e.g. how quick does it respond to your mouse movement? try adjusting the time*/
+}
+@media screen and (max-width: 1050px){
+  .deskTopMenu{
+      display: none;
+  }
+  .mobileMenu {
+      display: flex;
+  }
+  .mobileMenuTrigger {
+      display: flex;
+  }
+}
+#menuIcon{
+  width: 25px;
+  height: 20px;
+  position: relative;
+  margin-right: 40px;
+}
+.nav .mobileMenuTrigger{
+  margin-left: 90vw;
+}
+
+/*I've added right:0 and changed the value of translateX to 300px*/
+/*I've added right:0 and changed the value of translateX to 300px*/
+
+.nav .mobileMenu {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  transform: translateX(300px);
+  padding: 20px;
+  background-color: grey;
+}
+
+.mobileMenu li{
+  padding: 10px;
+}
+.mobileMenu a{
+  color: rgb(255, 255, 255)!important;
+  /* 强制 */
+}
+
+.mobileMenu a:hover{
+  color: black;
+  z-index: 10;
+
+  color: rgb(175, 53, 53);
+  padding: 20px;
+}
+
+.mobileMenu li{
+  padding: 10px;
+}
+.mobileMenu a{
+  color: black!important;
+  /* 强制 */
+}
+
+.mobileMenu a:hover{
+  color: black;
+}
+
+
+.nav .logo img{
+  width: 75px;
+  height: 75px;
+  margin-top: 20px;
+  /* box-shadow: 6px 6px 9px black;
+  border-radius: 10%; */
+  position: relative;
+  top: 0;
+  z-index: -1;
+}
+
+/* QUOTE */
+.quote{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../webimages/quoteBackground2.jpg);
+  background-size: cover;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
+}
+
+.quote h2{
+  font-family: times;
+  font-size: 23px;
+  color: white;
+}
+
+.quote h4{
+  font-family: times;
+  color: white;
+  font-size: 14px;
+}
+
+
+/* MISSION STATEMENT */
+.missionStatement{
+  background-color: #FDFAF2;
+  padding-top: 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-bottom: 8vh;
+}
+
+
+.missionStatement h2{
+  font-size: 15px;
+  font-weight: bold;
+  justify-content: right;
+  align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 1vw;
+  letter-spacing: 10px;
+  font-variant-caps: petite-caps;
+}
+
+.missionStatement ul{
+  display: inline;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  margin: 1vw;
+}
+
+.missionStatement li{
+  /* font-family: 'Times New Roman', Times, serif; */
+    font-family: times;
+    font-weight: 230;
+    font-size: 21px;
+    line-height: 180%;
+    color: rgb(196, 8, 8);
+    letter-spacing: 5px;
+}
+
+.missionStatement #statement{
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.missionStatement h5{
+  font-size: 18px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  box-sizing: content-box;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 180%;
+  margin-top: 1vw;
+}
+
+/* RECENT ARTICLES */
+.recentArticlesBig{
+  padding: 6vw 10vw 0vw 10vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.recentArticlesBig h2{
+  font-size: 15px;
+  font-weight: bold;
+  justify-content: right;
+  align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 1vw;
+  letter-spacing: 10px;
+  font-variant-caps: petite-caps;
+}
+
+.recentArticlesBig .recentArticlesCover{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 720px;
+  height: 330px;
+  background-image: url(../webimages/recentCover.jpeg);
+  background-size: cover;
+}
+
+/*  要center, need all the larger calsses all center. */
+
+.recentArticlesBig .recentArticlesCover .coverText{
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  padding-top: 23vh;
+  padding-bottom: 25vh;
+  text-align: center;
+}
+
+.recentArticlesBig .recentArticlesCover h3{
+  color: #FDFAF2;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 280;
+  font-size: 25px;
+  margin: 0;
+  z-index: 10;
+  letter-spacing: 0.7px;
+}
+
+.recentArticlesBig a{
+  text-decoration: none;
+}
+
+
+.recentArticlesBig .recentArticlesCover .mask{
+  background-color: transparent;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+.recentArticlesBig .recentArticlesCover .mask:hover {
+  background-color: rgba(41, 32, 32, 0.575);
+  content: "Hi!";
+}
+
+.recentArticlesBig .recentArticlesCover .mask:hover::before {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+}
+.recentArticlesBig .ArticlesCategories{
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.recentArticlesBig .ArticlesCategories #category{
+  display: grid;
+  grid-template-columns: 1fr 2.5fr !important;
+}
+
+.recentArticlesBig .ArticlesCategories h4{
+  position: center;
+  margin-left: 10px;
+  padding-top: 8px;
+  font-size: 18px;
+}
+.recentArticlesBig .ArticlesCategories img{
+  width: 80px;
+  height: 80px;
+}
+
+.recentArticlesBig .ArticlesCategories a{
+  text-decoration: none;
+  color: black;
+}
+.recentArticlesBig .ArticlesCategories  a:hover{
+  color: rgb(196, 8, 8);
+  transition: 250ms ease-in-out;
+}
+
+/* Phone RECENT ARTICLES */
+.recentArticlesPhone{
+  padding: 6vw 10vw 0vw 10vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.recentArticlesPhone h2{
+  font-size: 15px;
+  font-weight: bold;
+  justify-content: right;
+  align-items: center;
+  margin: 1vw;
+  letter-spacing: 10px;
+  font-variant-caps: petite-caps;
+}
+
+.recentArticlesCoverPhone{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../webimages/recentCoverPhone.jpeg);
+  background-size: cover;
+}
+.recentArticlesPhone .recentArticlesCoverPhone .coverTextPhone{
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  padding-bottom:10vh;
+  text-align: center;
+  background-image: url(../webimages/recentCover.jpeg);
+  background-size: cover;
+}
+
+.recentArticlesPhone .recentArticlesCoverPhone h3{
+  color: #fffdf7;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 280;
+  font-size: 20px;
+  margin: 0;
+  z-index: 10;
+  letter-spacing: 0.7px;
+  text-decoration-line: none;
+}
+
+.recentArticlesPhone .ArticlesCategories{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2px;
+}
+
+.recentArticlesPhone .ArticlesCategories #category{
+  display: grid;
+  grid-template-columns: 1fr 2.5fr !important;
+}
+
+.recentArticlesPhone .ArticlesCategories h4{
+  position: center;
+  margin-left: 5px;
+  padding-top: 3px;
+  font-size: 25px;
+}
+.recentArticlesPhone .ArticlesCategories img{
+  width: 100px;
+  height: 100px;
+}
+.recentArticlesPhone .ArticlesCategories a{
+  text-decoration: none;
+  color: black;
+}
+/* INTROOO */
+.intro{
+  padding: 6vw 10vw 0vw 10vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 10px;
+  font-variant-caps: small-caps;
+  padding-left: 10px;
+  padding-bottom: 2.4vw;
+}
+
+.intro #engTitle{
+  font-weight: 200;
+  margin-bottom: 5px;
+  margin-top: 1.8vw;
+  font-size: 25px;;
+  font-style: italic;
+  font-family: serif;
+  text-shadow: 3px 2px 2px rgb(163, 163, 163);
+}
+
+.intro p{
+  font-family: 'Times New Roman', Times, serif;
+    font-weight: 80;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.intro .bookPic{
+  display: flex;
+   justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.intro .bookPic img{
+  width: 180px;
+  box-shadow: 9px 9px 8px rgb(31, 31, 31);
+
+}
+
+.intro hr{
+  color: black;
+}
+
+/* Project ii */
+.intro .project2{
+  margin: 5vw;
+}
+
+
+
+
+/* BUYBOOK */
+
+.buy{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20vw 0vw 20vw;
+  align-items: center;
+}
+
+.buy .peek{
+  margin: 0;
+}
+.buy .peek h3{
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.buy .direction h3{
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  margin-top: 1vw;
+  font-weight: normal;
+}
+
+.buy .qrcode{
+  width: 130px;
+}
+
+/* GALLERY.CSS */
+
+/* ABOUTUS.CSS */
+
+
+
+/* FINAL QUOTE */
+
+.lastQuote{
+  margin: 4vw 25vw 10vw 25vw;
+}
+
+.lastQuote h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-variant-caps: small-caps;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.lastQuote #red{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-variant-caps: small-caps;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  font-variation-settings: normal;
+  color: rgb(172, 2, 2) !important;
+
+}
+
+
+/*
+ */
+/* FOOTER */
+
+
+
+
+  .footer{
+    width: 100vw;
+    z-index: 5;
+    bottom: 0;
+    height: 50vh;
+    background-color: rgb(54, 54, 54);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer .more h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding-top: 70px;
+    font-size: 25px;
+    letter-spacing: 9px;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant-caps: petite-caps;
+  }
+
+  .footer .contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer img{
+    display: flex;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .footer .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .footer .logo img{
+    width: 70px;
+    height: 70px;
+    z-index: 4;
+  }
+
+  .footer  a:hover{
+    transform: translateY(2px);
+  }
+
+ /* fonts sizes */
+
+ #subtitle{
+   font-size: 18px;
+ }
+
+ #paragraph{
+   font-size: 17px;
+ }
+
+
+
+
+
+
+
+
+
+ /* INDEX PHONE */
+
+
+.indexPhone a{
+  scroll-behavior:smooth;
+}
+#titlePhone{
+  font-size: 25px;
+  font-weight: 350;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 2px;
+  font-variant-caps: petite-caps;
+  margin: 2vh 0 1vh 0;
+}
+
+#paragraphPhone{
+font-size: 16px;
+  font-weight: 200;
+  align-items: center;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0vh 0 0 0;
+  line-height: 150%;
+}
+
+.indexPhone{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* BANNER */
+
+.indexPhone .navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: rgb(37, 37, 37);
+  width: 100vw;
+  height: 50px;
+  top: 0;
+  z-index: 100;
+}
+
+.indexPhone .navBar img{
+  width: 70px;
+  height: 74px;
+  margin-top: 40px;
+  left: 40%;
+}
+
+
+
+.indexPhone .bannerPhone{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../webimages/yellow\ pic\ in\ hand\ copy.jpg);
+  background-size: cover;
+  flex-direction: column;
+}
+
+
+.indexPhone .bannerPhone .menu a:hover{
+  text-shadow: rgb(151, 151, 151) 0.5px 1px;
+  color: rgb(143, 0, 0);
+  transition: 200ms ease-in-out;
+  /* easein- go into it slower/fast, e.g. how quick does it respond to your mouse movement? try adjusting the time*/
+}
+
+/* menu in banner */
+.indexPhone .bannerPhone .menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.indexPhone .bannerPhone .menu li{
+  color: white !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-variant-caps:petite-caps;
+  letter-spacing: 3px;
+  font-size: 23px;
+  line-height: 300%;
+  font-weight: 200;
+}
+.indexPhone .bannerPhone .menu li a{
+  color:#FDFAF2;
+  text-decoration: none;
+}
+
+.indexPhone .bannerPhone .menu li a:hover{
+  color: rgb(153, 0, 0);
+  transform: translateY(10px);
+}
+
+
+.indexPhone .bannerPhone .logo{
+  z-index: 4;
+  position: relative;
+  margin-top: 40px;
+}
+
+.indexPhone .bannerPhone .logo img{
+  width: 70px;
+  height: 74px;
+}
+
+.indexPhone .bannerPhone .statement{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 40px;
+}
+
+.indexPhone .bannerPhone .statement p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 150;
+  margin: 0vw 5vw 0 5vw;
+}
+
+/* MISSION STATEMENT */
+.indexPhone .missionStatementPhone{
+  background-color: #FDFAF2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15vw 8vw 0vh 8vw;
+}
+
+
+.indexPhone .missionStatementPhone ul{
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+.indexPhone .missionStatementPhone li{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 230;
+    font-size: 20px;
+    color: rgb(196, 8, 8);
+    letter-spacing: 2px;
+    line-height: 150%;
+    font-style: italic;
+}
+
+
+.indexPhone .missionStatementPhone h5{
+  font-size: 14px;
+  font-weight: 150;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 1vh 0 0 0;
+  line-height: 150%;
+}
+
+/* PROMOVID */
+.indexPhone .promoVideo{
+  width: 100vw;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.indexPhone .promoVideo {
+  display: flex;
+}
+
+.indexPhone .promoVideo video{
+  display: block;
+  width: 100vw;
+}
+
+.indexPhone .promoVideo .video .cover{
+  position: absolute;
+  background-color: transparent;
+  z-index: 1;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+ }
+
+ .indexPhone .promoVideo .video .cover:hover {
+   background-color: rgba(243, 29, 29, 0.884);
+ }
+
+ .indexPhone .promoVideo .video .cover:hover::before {
+   content: "Read more";
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+ }
+
+
+
+/* RECENT ARTICLES */
+.recentArticlesPhone{
+  padding: 6vw 4vw 0vw 4vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.recentArticlesPhone .recentArticlesCover{
+  margin-top: 10px;
+}
+
+.recentArticlesPhone .recentArticlesCover img{
+  width: 100%;
+  height: 100%;
+}
+
+.recentArticlesPhone .ArticlesCategories{
+  margin-top: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.recentArticlesPhone .ArticlesCategories #category{
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+}
+
+.recentArticlesPhone .ArticlesCategories h4{
+  position: center;
+  margin: 12px 0 0 10px;
+  font-size: 13px;
+}
+.recentArticlesPhone .ArticlesCategories img{
+  width: 45px;
+  height: 45px;
+}
+
+
+/* INTROOO */
+.indexPhone.introPhone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.indexPhone .introPhone{
+  padding: 7vh 10vw 0vw 10vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.indexPhone .introPhone .introText {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.introPhone .bookPic{
+  display: flex;
+   justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.introPhone .bookPic img{
+  width: 180px;
+  box-shadow: 9px 9px 8px rgb(31, 31, 31);
+
+}
+.introPhone #engTitle{
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-right: 0;
+  font-size: 25px;
+  font-style: italic;
+  font-family: serif;
+}
+.introPhone #chineseTitle {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
+.introPhone p{
+  font-family: 'Times New Roman', Times, serif;
+    font-weight: 80;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+/* project 2 phone*/
+
+
+/* BUYBOOK */
+
+.buyPhone{
+  display: flex;
+  flex-direction: column;
+  padding: 3vw 8vw 0vh 8vw;
+  align-items: center;
+}
+
+.buyPhone .peek{
+  margin: 0;
+}
+.buyPhone .peek h3{
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-align: center;
+  font-weight: normal;
+  padding: 0 10vw 0 10vw;
+}
+
+.buyPhone .direction h3{
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  margin-top: 2vw;
+  font-weight: normal;
+}
+
+.buyPhone .qrcode{
+  width: 150px;
+}
+
+/* GALLERY.CSS */
+
+/* ABOUTUS.CSS */
+
+
+
+/* FINAL QUOTE */
+.lastQuotePhone{
+  margin: 0 8vw 4vh 8vw;
+}
+
+.lastQuotePhone h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-variant-caps: petite-caps;
+  font-weight: 250;
+  font-size: 17px;
+  text-align: center;
+}
+
+.lastQuotePhone #red{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 250;
+  font-size: 17px;
+  font-variant-caps: petite-caps;
+  text-align: center;
+  font-variation-settings: normal;
+  color: rgb(172, 2, 2) !important;
+}
+
+
+/*
+ */
+/* FOOTER */
+
+
+
+  /* FOOTER */
+
+  .footerPhone{
+    width: 100vw;
+    z-index: 5;
+    bottom: 0;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerPhone .more{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerPhone .more h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 23px;
+    letter-spacing: 1.5vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-variant-caps: petite-caps;
+    font-weight: 120;
+    margin-top: 35px;
+  }
+
+  .footerPhone .contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw 20vw 0vw 20vw;
+  }
+
+  .footerPhone img{
+    display: flex;
+    width: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .footerPhone .logo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .footerPhone .logo img{
+    width: 50px;
+  }
+  .footerPhone  a:hover{
+    transform: translateY(2px);
+  }

@@ -1,0 +1,533 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  width: 100vw;
+  margin: 0;
+
+}
+
+.bodyOffset{
+  transform: translateX(-300px);
+}
+
+.banner{
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #FDFAF2;
+  background-image: url(../unsung\ good\ pics/infinite);
+  background-size: cover;
+  position: relative;
+}
+.banner .all{
+  padding-top: 20vh;
+}
+.banner .wing{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  position: absolute;
+  padding-left: 55vw;
+}
+
+
+.banner .redCheek{
+  margin-top: -20px;
+  display: flex;
+  width: 100px;
+  height: 85px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 10px;
+  top: 70%;
+}
+
+.banner .wing img{
+  opacity: 0.9;
+  width: 130px;
+  height: 100px;
+  position: absolute;
+}
+
+.banner .single{
+  right: 2.5%;
+  top: 25%;
+  display: flex;
+  position: absolute;
+  width: 70px;
+  height: 55px;
+  z-index: 10;
+}
+
+.banner .single img{
+  rotate: 90;
+}
+
+
+.banner .welcome{
+  margin: 0;
+  font-size: 30px;
+  color: rgb(22, 22, 22);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  padding-left: 80px;
+  position: relative;
+  z-index: 3;
+  letter-spacing: 5px;
+  padding-bottom: 30px;
+}
+
+.banner #unsung{
+  color: rgb(17, 17, 17);
+  font-size: 120px;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding-left: 80px;
+  font-weight: bold;
+  font-style: italic;
+  z-index: 5;
+  position: sticky;
+}
+
+.banner #shanghai{
+  color: rgb(17, 17, 17);
+  font-size: 120px;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  margin: 0;
+  padding-left: 130px;
+  z-index: 1;
+  font-style: italic;
+  z-index: 5;
+  position: sticky;
+  padding-bottom: 50px;
+}
+
+.banner .dive {
+  padding-left: 100px;
+  bottom: 25%;
+}
+.banner .dive li{
+  list-style-type: none;
+  align-items: center;
+  font-weight: 200;
+  justify-content: center;
+  display: inline-flex;
+  padding-left: 30px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner .dive .a{
+  color: rgb(0, 0, 0);
+  animation: ease-out 3000ms 1 dropDown;
+}
+
+.banner .dive .dive{
+  color: rgb(167, 0, 0);
+  animation: ease-out 3300ms 1 dropDown;
+}
+.banner .dive .into{
+  animation: ease-out 3700ms 1 dropDown;
+}
+.banner .dive .history{
+  animation: ease-out 4200ms 1 dropDown;
+}
+
+
+.banner .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-size: cover;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 30vw; */
+  position: absolute;
+  padding-left: 700px;
+  top: 20%
+}
+
+.grid div {
+  height: 68px;
+  width: 98px;
+  
+}
+
+.grid img{
+  height: inherit;
+  width: inherit;
+  z-index: 0;
+}
+
+section {
+  position: relative;
+  width: 500px;
+}
+
+.mouse{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: ease-out 4000ms 1 dropUp;
+  position: absolute;
+  bottom: 3%;
+}
+.mouse img{
+  width: 30px;
+  height: 30px;
+}
+.mouse h3{
+  font-weight: 100;
+  font-size: 15px;
+  padding-top: 0;
+  margin: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#g3,
+#g8,
+#g13,
+#g18,
+#g23,
+#g28,
+#g33
+{
+  animation: ease-out 1400ms 1 dropDown;
+}
+
+#g4,
+#g9,
+#g14,
+#g19,
+#g24, 
+#g29,
+#g34{
+  animation: ease-out 2300ms 1 dropDown;
+}
+
+#g7,
+#g12,
+#g17,
+#g22,
+#g27, 
+#g32{
+  animation: ease-out 2000ms 1 dropDown;
+}
+
+
+#g6,
+#g11,
+#g16,
+#g21,
+#g26,
+#g31
+ {
+  animation: ease-out 1500ms 1 dropDown;
+}
+
+#g5,
+#g10,
+#g15,
+#g20,
+#g25,
+#g30,
+.single img
+ {
+  animation: ease-out 3000ms 1 dropDown;
+}
+
+
+
+
+
+@keyframes dropDown {
+  0% {
+    transform: translateY(-999px);
+    /* start offthe screen */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* come back to 0 at 100%*/
+  }
+}
+
+
+
+@keyframes dropUp {
+  0% {
+    transform: translateY(200px);
+    /* start offthe screen */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* come back to 0 at 100%*/
+  }
+}
+
+.element {
+  animation-name: inherit;
+  animation-duration: 2.5s; 
+  animation-timing-function: ease-in; 
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running; 
+  }
+
+
+
+
+.bannerSmall .words{
+  padding-top: 50px;
+}
+
+.bannerSmall .grid{
+  padding-left: 20vw;
+  opacity: 0.6;
+  /* top: 20%; */
+  top: 130px;
+  height: 40px;
+  position: absolute;
+  width: 80vw;
+}
+
+.bannerSmall .grid div{
+  height: 65px;
+  width: 95px;;
+}
+
+.bannerSmall .words .welcome{
+  top: 15%;
+  font-size: 27px;
+  padding-left: 15vw;
+  font-weight: 200;
+}
+
+.bannerSmall .words #unsung{
+  top: 19%;
+  font-size: 110px;
+  position: relative;
+  padding-left: 15vw;
+}
+
+.bannerSmall .words #shanghai{
+  font-size: 110px;
+  padding-left: 25vw;
+  position: relative;
+  top: 18%;
+}
+
+
+.bannerSmall .dive {
+  padding-top: 5vh;
+  padding-left: 11vw;
+  z-index: 3;
+  position: sticky;
+}
+.bannerSmall .dive li{
+  list-style-type: none;
+  align-items: center;
+  font-weight: 200;
+  justify-content: center;
+  display: inline-flex;
+  padding-left: 30px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  display: absolute;
+}
+
+.bannerSmall .redCheek {
+  margin-top: 20px;
+}
+
+.bannerSmall .wing{
+  top: 15%;
+  position: absolute;
+  left: -7%;
+}
+
+.bannerSmall .wing img{
+  height: 50px;
+  width: 60px;
+}
+
+
+/* BANNER SIZES */
+
+/* Bannermed */
+.bannerMed .grid{
+  right: 10%;
+}
+
+.bannerMed .words{
+  padding-top: 20vh;
+  padding-left: 4vw;
+}
+
+.bannerMed .wing{
+  top: 20%;
+}
+
+
+
+
+/* BannerLarge */
+
+.bannerLarge .nav .logo .img{
+  width: 100px !important;
+  height: 100px !important;
+}
+.bannerLarge .grid{
+  right: 12%;
+  top: 18%;
+}
+
+.bannerLarge .grid div{
+  width: 120px;
+  height: 80px;
+}
+
+
+
+/* birds */
+.bannerLarge .wing{
+  top: 15%;
+}
+
+.bannerLarge .wing img{
+  width: 8vw;
+  height: 7vw;
+}
+.bannerLarge .single img{
+  width: 6.3vw;
+  height: 5vw;
+}
+.bannerLarge .redCheek img{
+  width: 8vw;
+  height: 7vw;
+}
+
+/* words */
+.bannerLarge .words{
+  padding-top: 20vh;
+  padding-left: 3vw;
+}
+
+.bannerLarge .words .welcome{
+  font-size: 2.2vw;
+}
+
+.bannerLarge .words #unsung{
+  font-size: 9vw;
+}
+.bannerLarge .words #shanghai{
+  font-size: 9vw;
+}
+.bannerLarge .words .dive >li{
+  font-size: 2.2vw;
+}
+
+.bannerLarge .mouse img{
+  width: 36px;
+  height: 36px;
+}
+
+.bannerLarge .mouse h3{
+  font-size: 20px;
+}
+
+
+/* bannermega */
+
+.bannerMega .nav .logo{
+  width: 120px;
+  height: 120px;
+}
+
+.bannerMega .grid{
+  right: 10%;
+  top: 18%;
+}
+
+.bannerMega .grid div{
+  width: 6.5vw;
+  height: 4.5vw;
+}
+
+
+
+/* birds */
+.bannerMega .wing{
+  top: 15%;
+}
+
+.bannerMega .wing img{
+  width: 8.5vw;
+  height: 7.4vw;
+}
+.bannerMega .single img{
+  width: 7vw;
+  height: 5.8vw;
+}
+.bannerMega .redCheek img{
+  width: 9vw;
+  height: 8vw;
+}
+
+/* words */
+.bannerMega .words{
+  padding-top: 17vh;
+  padding-left: 5vw;
+}
+
+.bannerMega .words .welcome{
+  font-size: 2.5vw;
+}
+
+.bannerMega .words #unsung{
+  font-size: 9vw;
+}
+.bannerMega .words #shanghai{
+  font-size: 9vw;
+}
+.bannerMega .words .dive >li{
+  font-size: 2.5vw;
+}
+/* mouse */
+.bannerMega .mouse img{
+  width: 50px;
+  height: 50px;
+}
+
+.bannerMega .mouse h3{
+  font-size: 30px;
+}
+
+
+
+
+
+

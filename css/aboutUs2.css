@@ -1,0 +1,371 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body{
+    width: 100vw;
+    margin: 0;
+    background-color: #FDFAF2;
+  }
+  
+  .bodyOffset{
+    transform: translateX(-300px);
+  }
+  
+  p {
+    line-height: 1.8;
+  }
+  
+  .hidden{
+    display: none;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  p, h1, h2, li, h3, h4, h5{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  ul,ol,li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  @media screen and (max-width: 450px){
+    .unsungTeamBig{
+        display: none;
+    }
+    .unsungTeamMed {
+      display: none;
+    }
+    .unsungTeamSmall {
+      display: none;
+    }
+    .unsungTeamPhone {
+        display: flex;
+        flex-direction: column;
+    }
+    .members{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 2vh;
+      padding-bottom: 9vh;
+    }
+  }
+
+
+  @media screen and (min-width: 451px) and (max-width: 700px){
+    .unsungTeamBig{
+        display: none;
+    }
+    .unsungTeamMed {
+      display: none;
+    }
+    .unsungTeamSmall {
+      display: flex;
+      flex-direction: column;
+    }
+    .members{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 7vh;
+      padding-bottom: 9vh;
+  }
+    .unsungTeamPhone {
+      display: none;
+    }
+    
+  }
+
+  @media screen and (min-width: 701px) and (max-width: 1100px){
+  .unsungTeamBig{
+      display: none;
+  }
+  .unsungTeamMed {
+    display: flex;
+    flex-direction: column;
+  }
+  .members{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7vh;
+    padding-bottom: 9vh;
+  }
+  .unsungTeamSmall {
+    display: none;
+  }
+  .unsungTeamPhone {
+      display: none;
+  }
+  }
+
+  @media screen and (min-width: 1100px){
+  .unsungTeamBig{
+      display: flex;
+      flex-direction: column;
+  }
+  .members{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 7vh;
+    padding-bottom: 9vh;
+  }
+  .unsungTeamMed {
+      display: none;
+  }
+  .unsungTeamSmall {
+    display: none;
+  }
+  .unsungTeamPhone {
+      display: none;
+  }
+  }
+
+
+  
+  .nav {
+    position: relative;
+    height: 80px;
+    width: 100vw;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+  }
+  
+  .nav .logo {
+    position: relative;
+    align-items: center;
+  }
+
+  .nav .logo img{
+    width: 80px;
+    height: 80px;
+    /* box-shadow: 6px 6px 9px black;
+    border-radius: 10%; */
+    position: relative;
+    top: 4;
+    z-index: -1;
+    
+  }
+
+  .nav .logo a{
+    width: 80px;
+    height: 80px !important;
+  }
+/* Back */
+
+ .back{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 50px;
+}
+ .back img{
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+}  
+.back h2{
+  text-decoration: none;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  padding-left: 7px;
+  font-size: 20px;
+}  
+
+/* 
+   */
+
+  .team{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 25px;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 10px;
+  }
+
+  .team img{
+    position: relative;
+    width: 100%;
+    height: 3px;
+  }
+
+  .all .text{
+    position: relative;
+  }
+
+.all h1, h2, h3, h4, h5{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.all h3{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.all h4{
+  font-style: italic;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.all h5{
+  font-size: 13px;
+  font-weight: 100;
+  padding-top: 0.5vh;
+}
+.all{
+    padding: 0vh 8vw 0vh 8vw;
+
+}
+.all #pic{
+  width: 180px;
+    height: 180px;
+}
+
+
+.members #ppl{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: left;
+    grid-gap: 1vw;
+}
+
+
+
+
+/* PHONE */
+
+
+#titlePhone{
+  font-size: 25px;
+  font-weight: 350;
+  justify-content: right;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 2px;
+  font-variant-caps: petite-caps;
+  margin: 2vh 0 1vh 0;
+}
+
+.unsungTeamPhone .navBar {
+  position: fixed;
+  background-color: rgb(37, 37, 37);
+  width: 100vw;
+  height: 50px;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms ease-out;
+  transform: translateY(0px);
+}
+
+.unsungTeamPhone .navBar img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 74px;
+  margin-top: 40px;
+}
+
+
+.unsungTeamPhone .back{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 20px;
+}
+.unsungTeamPhone .back img{
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+}  
+.unsungTeamPhone .back h2{
+  text-decoration: none;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  padding-left: 7px;
+  font-size: 15px;
+}  
+
+.unsungTeamPhone .team{
+  padding-top: 70px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unsungTeamPhone .team h1{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 20px;
+}
+
+
+.unsungTeamPhone .all h1, h2, h3, h4, h5{
+margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.unsungTeamPhone .all h3{
+font-size: 18px;
+font-weight: 300;
+}
+
+.unsungTeamPhone .all h4{
+font-style: italic;
+font-weight: 100;
+font-size: 15px;
+}
+
+.unsungTeamPhone .all h5{
+font-size: 13px;
+font-weight: 100;
+}
+.unsungTeamPhone .all{
+  padding: 0vh 8vw 0vh 8vw;
+
+}
+.unsungTeamPhone .all #pic{
+  width: 40vw;
+  height: 40vw;
+}
+
+
+.unsungTeamPhone .members #ppl{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: left;
+  grid-gap: 1vw;
+}

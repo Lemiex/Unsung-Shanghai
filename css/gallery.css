@@ -1,0 +1,531 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body{
+    width: 100vw;
+    margin: 0;
+  }
+  
+  .bodyOffset{
+    transform: translateX(-300px);
+  }
+  
+  .line img{
+    padding-top: 10px;
+    width: 1px !important;
+    height: 85%;
+    bottom: 0%;
+  }
+
+  @media screen and (max-width: 800px){
+    .galleryBig{
+        display: none;
+    }
+    .galleryPhone {
+        display: flex;
+    }
+    .galleryPhone .stories .storyOne, .storyTwo, .storyThree, .storyFour{
+      align-items: center;
+      justify-content: center;
+      margin: 0 !important;
+      width: 90vw !important;
+      height: 100% !important;
+    }
+  }
+  
+  @media screen and (min-width: 801px){
+    .galleryBig{
+        display: flex;
+    }
+    .galleryBig .stories .storyFour, .storyOne, .storyTwo, .storyThree{
+      margin-left: 10vw;
+      width: 75vw!important;
+      height: 20vw !important;
+    }
+    .galleryPhone {
+        display: none;
+    }
+  }
+  
+
+.galleryTitle h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 10px;
+  font-variant-caps: petite-caps;
+  margin-bottom: 50px;
+}
+
+
+/* GALLERY */
+.galleryBig{
+    padding-top: 100px;
+    flex-direction: column;
+}
+
+.galleryBig .stories{
+    padding-left: 3vw; 
+    padding-right: 3vw;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 3vw;
+  }
+
+
+/* STORY ONE */
+
+
+
+.galleryBig .storyOne{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr;
+    grid-template-rows: 1fr;
+  }
+
+  .galleryBig .storyOne .line{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    }
+
+
+  
+  .galleryBig .storyOne .line h5{
+     margin: 0 auto;  
+     font-size: 1.25vw;
+     text-align: center;
+     font-weight: 200;
+    }
+
+
+  
+    .galleryBig .storyOne .storyPic img{
+    background-size: cover;
+    height: 100%;
+  }
+
+  .galleryBig .storyOne .description{
+    background-color:rgb(218, 218, 218);
+    padding: 3vw 3vw 3vw 3vw;
+  }
+
+  .galleryBig .storyOne .description h2{
+    margin: 0;
+    font-size: 1.8vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    padding-bottom: 2vw;
+    color: rgb(0, 0, 0);
+  }
+  .galleryBig .storyOne .description p{
+    margin: 0;
+    font-size: 1.1vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+  }
+   
+  .galleryBig .storyOne .storyPic .mask{
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+  }
+  
+  .galleryBig .storyOne .mask:hover {
+    background-color: rgba(140, 132, 132, 0.582);
+  }
+  
+  .galleryBig .storyOne .mask:hover::before {
+    content: "Read more";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  /* STORY TWO */
+  .galleryBig .storyTwo{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr;
+    grid-template-rows: 1fr;
+  }
+  .gallery .storyTwo .line{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    }
+
+  .gallery .storyTwo .line img{
+      width: 2px;
+      height: 100%;
+      padding-top: 15px;
+      padding-bottom: 10px;
+  }
+  .gallery .storyTwo .line h5{
+     margin: 0 auto;  
+     font-size: 1.25vw;
+     text-align: center;
+     font-weight: 200;
+    }
+
+
+  
+  .galleryBig .storyTwo .storyPic img{
+    background-size: cover;
+    height: 100%;
+  }
+
+  .galleryBig .storyTwo .description{
+    background-color:rgb(218, 218, 218);
+    padding: 3vw 2vw 0vw 3vw;
+  }
+
+  .galleryBig .storyTwo .description h2{
+    margin: 0;
+    font-size: 1.8vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    padding-bottom: 1.6vw;
+    color: rgb(0, 0, 0);
+  }
+  .galleryBig .storyTwo .description p{
+    margin: 0;
+    font-size: 1.1vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+  }
+   
+  .galleryBig .storyTwo .storyPic .mask{
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+  }
+  
+  .galleryBig .storyTwo .mask:hover {
+    background-color: rgba(140, 132, 132, 0.582);
+  }
+  
+  .galleryBig .storyTwo .mask:hover::before {
+    content: "Read more";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  /* STORY THREE */
+  .galleryBig .storyThree{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr;
+    grid-template-rows: 1fr;
+  }
+
+  .galleryBig .storyThree .line{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .galleryBig .storyThree .line img{
+    padding-top: 10px;
+      width: 2px;
+      height: 85%;
+      bottom: 0%;
+  }
+  .galleryBig .storyThree .line h5{
+     margin: 0 auto;  
+     font-size: 1.25vw;
+     text-align: center;
+     font-weight: 200;
+    }
+
+
+  
+    .galleryBig .storyThree .storyPic img{
+    background-size: cover;
+    height: 100%;
+  }
+
+  .galleryBig .storyThree .description{
+    background-color:rgb(218, 218, 218);
+    padding: 3vw 2vw 0vw 3vw;
+  }
+
+  .galleryBig .storyThree .description h2{
+    margin: 0;
+    font-size: 1.8vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    padding-bottom: 2vw;
+    color: rgb(0, 0, 0);
+  }
+  .galleryBig .storyThree .description p{
+    margin: 0;
+    font-size: 1.15vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+  }
+   
+  .galleryBig .storyThree .storyPic .mask{
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+  }
+  
+  .galleryBig .storyThree .mask:hover {
+    background-color: rgba(140, 132, 132, 0.582);
+  }
+  
+  .galleryBig .storyThree .mask:hover::before {
+    content: "Read more";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  /* STORY FOUR */
+  .galleryBig .storyFour{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr;
+    grid-template-rows: 1fr;
+  }
+
+  .galleryBig .storyFour .line{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .galleryBig .storyFour .line img{
+    padding-top: 10px;
+      width: 2px;
+      height: 85%;
+      bottom: 0%;
+  }
+  .galleryBig .storyFour .line h5{
+     margin: 0 auto;  
+     font-size: 1.25vw;
+     text-align: center;
+     font-weight: 200;
+    }
+  
+    .galleryBig .storyFour .storyPic img{
+    background-size: cover;
+    height: 100%;
+  }
+
+  .galleryBig .storyFour .description{
+    background-color:rgb(218, 218, 218);
+    padding: 3vw 3vw 3vw 3vw;
+  }
+
+  .galleryBig .storyFour .description h2{
+    margin: 0;
+    font-size: 1.8vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    padding-bottom: 2vw;
+    color: rgb(0, 0, 0);
+  }
+  .galleryBig .storyFour .description p{
+    margin: 0;
+    font-size: 1.1vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+  }
+   
+  .galleryBig .storyFour .storyPic .mask{
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+  }
+  
+  .galleryBig .storyFour .mask:hover {
+    background-color: rgba(140, 132, 132, 0.582);
+  }
+  
+  .galleryBig .storyFour .mask:hover::before {
+    content: "Read more";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  /* buy */
+
+  .galleryBig .storyBuy{
+    display: grid;
+    display: flex;
+    grid-template-columns: 0.8fr 1fr;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25vw;
+  }
+
+  .galleryBig  .storyBuy .read{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    padding-right: 8px;
+  }
+  .galleryBig .storyBuy .songs{
+    color: rgb(173, 10, 4);
+    text-decoration: underline;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    font-style: italic;
+  }
+
+  .galleryBig .storyBuy h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6vw;
+    font-weight: 600;
+  }
+
+
+
+  .galleryBig .galleryTitle h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 10px;
+    font-variant-caps: petite-caps;
+    margin-bottom: 50px;
+  }
+  
+  
+  /* GALLERY */
+
+
+  #storyTitlePhone{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 250;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin: 1vh 0 1vh 0;
+    font-style: italic;
+  }
+  .galleryPhone{
+      padding-top: 80px;
+      flex-direction: column;
+      margin: 0 auto;
+  }
+
+  .galleryPhone a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .galleryPhone .galleryTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0vh;
+  }
+  .galleryPhone .stories{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-gap: 3vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+  
+    /* buy */
+  
+  .storyBuyPhone{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+  }
+
+  .storyBuyPhone h2{
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .storyBuyPhone h3{
+    color: rgb(163, 0, 0);
+    margin: 0;
+    font-size: 17px;
+  }

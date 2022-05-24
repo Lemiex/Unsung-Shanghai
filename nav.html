@@ -1,0 +1,49 @@
+<div class="logo">
+        <div class="mask"></div>
+        <a href="index.html"><img src="images/KmrjncgNEsuQWL8alogo.png" alt=""></a>
+    </div>
+            <h3>Unsung Shanghai</h3>
+<div class="deskMenu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#intro">Projects</a></li>
+        <li><a href="/ourMission/">Our mission</a></li>
+        <li><a href="/stories/">Stories</a></li>
+        <li><a href="#intro">About Us</a></li>
+        <li><a href="#apply">Contact us</a></li>
+    </ul>
+</div>
+<a href="#!" class="mobileMenuTrigger">Menu</a>
+<div class="mobileMenu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/Projects/">Projects</a></li>
+        <li><a href="/ourMission/">Our mission</a></li>
+        <li><a target="_blank" href="/stories/">Stories</a></li>
+        <!-- target="_blank" opens in another tab -->
+        <li><a href="#intro">About Us</a></li>
+        <li><a href="#apply">Contact us</a></li>
+        <li><a href="#apply">Close menu</a></li>
+    </ul>
+</div>
+
+<script>
+        $(document).ready(function () {
+             $('.mobileMenuTrigger').click(function () {
+                  $('body').toggleClass('bodyOffset');
+                  if ($('.bodyOffset').is(':visible')) {
+                       $(this).text('CLOSE');
+                  } else {
+                       $(this).text('MENU');
+                  }
+             });
+             $('.mobileMenu li').click(function () {
+                  $('body').removeClass('bodyOffset');
+                  if ($('.bodyOffset').is(':visible')) {
+                       $('.mobileMenuTrigger').text('CLOSE');
+                  } else {
+                       $('.mobileMenuTrigger').text('MENU');
+                  }
+             });
+        });
+   </script>
