@@ -3,5 +3,4 @@
 A website built for the Student Organisation Unsung Shanghai, at Shanghai American School, Puxi.
 
 Visit the laptop, mobile, and tablet version!
-<img width="1435" alt="Screen Shot 2022-10-03 at 7 24 17 PM" src="https://user-images.githubusercontent.com/61687774/193703260-e0431b51-7edb-4b12-a90c-5d4c264c7842.png">
-![IMG_7911](https://user-images.githubusercontent.com/61687774/193703398-9bdef01e-5f7b-4923-906b-1c4e915d6af6.PNG)
+<img width="762" alt="Screen Shot 2022-10-03 at 7 28 43 PM" src="https://user-images.githubusercontent.com/61687774/193703609-0f47c9af-2220-4ee6-b3d4-d6dd283d7230.png">
